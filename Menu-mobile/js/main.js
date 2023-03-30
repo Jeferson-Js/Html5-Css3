@@ -1,6 +1,6 @@
-const navbarToggle = document.querySelector(".navbar__toggle");
-const mobileMenu = document.querySelector(".mobile-menu");
+const navbarToggle = document.querySelector(".ph-list");
+const lista = document.querySelector("ul");
 
 navbarToggle.addEventListener("click", function () {
-  mobileMenu.classList.toggle("active");
+  lista.classList.toggle("active");
 });
