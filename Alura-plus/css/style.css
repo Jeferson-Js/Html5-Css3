@@ -12,7 +12,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 body {
@@ -144,7 +144,6 @@ body {
   color: var(--cor-de-fundo);
 }
 
-
 .secundario__botao {
   background-color: var(--botao-azul);
   color: var(--branco-principal);
@@ -156,4 +155,39 @@ body {
 .secundario__botao:hover {
   background-color: var(--botao-azul-efeito);
   color: var(--cor-de-fundo);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+    background-image: none;
+  }
+  .container__imagem {
+    width: 60vw;
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .container__caixa {
+    margin: 3em 3em;
+  }
+
+  .secundario {
+    margin: 2px;
+    text-align: center;
+  }
+
+  .secundario__imagem {
+    width: 50vw;
+  }
+  .dispositivo__lista {
+    display: block;
+    text-align: center;
+  }
+  .rodape__lista {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
 }
